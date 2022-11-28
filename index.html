@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta rel="icon" >
     <title>LH Games</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,34 +19,172 @@
 
   <body>
     <header>
-      
+      <div id="containent" class="container-fluid">
+          <a class="nav-link" href="login.html" style="text-align: end;"><label> Faça Login ou Cadastre-se! <button type="button" class="btn btn-outline-primary">Entrar / Cadastrar-se</button></label></a>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo da empresa" id="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Promoções</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Consoles</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias de Jogos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Ação</a></li>
+                  <li><a class="dropdown-item" href="#">Aventura</a></li>
+                  <li><a class="dropdown-item" href="#">Infantil</a></li>
+                  <li><a class="dropdown-item" href="#">Ficção</a></li>
+                  <li><a class="dropdown-item" href="#">Fantasia</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Todas as categorias</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-
-
-
-      <section id="section-banners" class="container-fluid">
-
-        
-
+      <div id="containban" class="container-fluid">
+      <section id="section-banners" class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/banner1.jpg" class="d-block w-100" alt="banner1">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner2.PNG" class="d-block w-100" alt="banner2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner3.PNG" class="d-block w-100" alt="banner3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>        
       </section>
+    </div>
+
       <section id="section-vendidos" class="container-fluid">
+        <center>
+          <div class="fitdest">
+            <h2>DESTAQUES</h2>
+          </div>
+        </center>
+        
+        <center>
+        <div class="card-group">
+          <div class="card">
+            <img src="img/jogo1.PNG" class="card-img-top" alt="jogo1">
+            <div class="card-body">
+              <h5 class="card-title">Jogo 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae justo eget magna fermentum iaculis eu.</p>
+              <p class="preco">R$ 185,90</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
 
-        <h2>OS MAIS VENDIDOS</h2>
+          <div class="card">
+            <img src="img/jogo2.PNG" class="card-img-top" alt="jogo2">
+            <div class="card-body">
+              <h5 class="card-title">Jogo 2</h5>
+              <p class="card-text">Donec porttitor dui vel gravida feugiat. Etiam sit amet diam ut dolor rhoncus blandit non vel sem. Phasellus lobortis lacus at dolor dapibus blandit. Sed a lorem lectus. </p>
+              <p class="preco">R$ 258,99</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
 
-      
-      </div>
+          <div class="card">
+            <img src="img/jogo3.PNG" class="card-img-top" alt="jogo3">
+            <div class="card-body">
+              <h5 class="card-title">Jogo 3</h5>
+              <p class="card-text">Curabitur aliquet ligula sit amet ligula eleifend viverra. Duis aliquet nisl vel ex ullamcorper sodales. Nulla gravida dictum semper. Vivamus vestibulum condimentum risus.</p>
+              <p class="preco">R$ 339,90</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+        </center>
+
+        <center>
+          <div class="fitmv">
+            <h2>MAIS VENDIDOS</h2>
+          </div>
+        </center>
+
+        <center>
+        <div class="card-group">
+          <div class="card">
+            <img src="img/jv1.jpg" class="card-img-top" alt="jmv1">
+            <div class="card-body">
+              <h5 class="card-title">Jogo Mais Vendido 1</h5>
+              <p class="card-text">Praesent faucibus lacinia dolor, at venenatis neque aliquam nec. Aliquam malesuada vel lorem sed placerat. Maecenas purus erat, vestibulum sit amet viverra sit amet, pharetra eu enim.</p>
+              <p class="preco">R$ 155,90</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/jv2.jpg" class="card-img-top" alt="jmv2">
+            <div class="card-body">
+              <h5 class="card-title">Jogo Mais Vendido 2</h5>
+              <p class="card-text">Aenean dolor arcu, lobortis vitae tortor nec, porta venenatis ante. Ut non dui ac purus imperdiet pharetra eu et lacus. Morbi eget ante felis.</p>
+              <p class="preco">R$ 349,90</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/jv3.jpg" class="card-img-top" alt="jmv3">
+            <div class="card-body">
+              <h5 class="card-title">Jogo Mais Vendido 3</h5>
+              <p class="card-text">Maecenas congue in purus at aliquet. Aenean placerat scelerisque finibus. Donec eleifend, augue ut tristique congue, ex risus scelerisque metus, eu euismod nibh est sed odio.</p>
+              <p class="preco">R$ 412,90</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
       </section>
+    </center>
 
 
     </main>
 
     <footer>
-      <p></p>
+      <p id="desnv">Desenvolvido por LH Games</p>
+      <p>Todos os direitos reservados</p>
     </footer>
-
-    <button id="voltar-topo" type="button" class="btn btn-outline-primary" onclick="topo()">&uarr; Voltar ao topo</button>
+    <div id="containvt">
+      <button id="voltar-topo" type="button" class="btn btn-outline-primary" onclick="btop()">&uarr; Voltar ao topo</button>
+    </div>
 
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
